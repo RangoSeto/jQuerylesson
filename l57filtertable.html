@@ -178,13 +178,13 @@
 				// 			display:"none"
 				// 		});
 				// 	}
-				// })
+				// });
 
 
 				// filter for first column (method A)
-				$("#datatable tr").filter(function(){
-					$(this).toggle($(this).children(":last").text().toLowerCase().indexOf(getinput) > -1);
-				});
+				// $("#datatable tr").filter(function(){
+				// 	$(this).toggle($(this).children(":last").text().toLowerCase().indexOf(getinput) > -1);
+				// });
 
 				// filter for first column (method B)
 				$("#datatable tr").filter(function(){
@@ -192,23 +192,23 @@
 				});
 
 				// filter for first column (method C)
-				$("#datatable tr").filter(function(){
-					$(this).toggle($(this).children(":eq(1)").text().toLowerCase().indexOf(getinput) > -1);
-				});
+				// $("#datatable tr").filter(function(){
+				// 	$(this).toggle($(this).children(":eq(1)").text().toLowerCase().indexOf(getinput) > -1);
+				// });
 
-				// filter for first column (method C)
-				$("#datatable tr").filter(function(){
-					if($(this).children(":eq(0)").text().toLowerCase().indexOf(getinput) > -1){
-						$(this).css({
-							// display:""
-							display:"table-row"
-						})
-					}else{
-						$(this).css({
-							display:"none"
-						});
-					}
-				})
+				// filter for first column (method D)
+				// $("#datatable tr").filter(function(){
+				// 	if($(this).children(":eq(0)").text().toLowerCase().indexOf(getinput) > -1){
+				// 		$(this).css({
+				// 			// display:""
+				// 			display:"table-row"
+				// 		})
+				// 	}else{
+				// 		$(this).css({
+				// 			display:"none"
+				// 		});
+				// 	}
+				// });
 
 
 			});
